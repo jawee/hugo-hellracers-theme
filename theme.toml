@@ -3,19 +3,19 @@
 
 name = "hellracers"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+licenselink = "https://github.com/jawee/hugo-hellracers-theme/blob/master/LICENSE"
 description = ""
-homepage = "http://example.com/"
+homepage = "https://hellracers.se/"
 tags = []
 features = []
 min_version = "0.41"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Andreas Olsson"
+  homepage = "https://jawee.se"
 
 # If porting an existing theme
 [original]
-  name = ""
-  homepage = ""
-  repo = ""
+  name = "blank"
+  homepage = "https://github.com/vimux/blank/"
+  repo = "https://github.com/vimux/blank/"
