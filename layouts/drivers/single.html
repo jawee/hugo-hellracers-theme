@@ -1,17 +1,19 @@
 {{ define "main" }}
-	<main>
-		<article>
-			<div>
-				{{ .Content }}
-			</div>
-			<div>
-				<ul id="tags">
-					{{ range .Params.tags }}
-					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-					{{ end }}
-				</ul>
-			</div>
-		</article>
-	</main>
+    <main>
+        <article>
+            <h1>{{ .Params.Name }}</h1>
+            <img src="{{ .Params.Image }}">
+            <div>
+                {{ .Content }}
+            </div>
+            <div>
+                <ul id="tags">
+                    {{ range .Params.tags }}
+                        <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+        </article>
+    </main>
 {{ partial "sidebar.html" . }}
 {{ end }}

@@ -1,15 +1,10 @@
 {{ define "main" }}
-	<main>
-		{{ if or .Title .Content }}
-		<div style="background: red;">
-			{{ with .Title }}<h1>{{ . }}</h1>{{ end }}
-			{{ with .Content }}<div>{{ . }}</div>{{ end }}
-		</div>
-		{{ end }}
+    <main>
+        <h1 id="title"> {{ .Title }}</h1>
+            {{ .Content }}
 
-		{{ range .Paginator.Pages }}
-			{{ .Render "summary" }}
-		{{ end }}
-	</main>
-{{ partial "sidebar.html" . }}
+            {{ range .Pages }}
+                {{ partial "drivers/driver" .}}
+            {{ end }}
+    </main>
 {{ end }}
