@@ -9,6 +9,7 @@ homepage = "https://hellracers.se/"
 tags = []
 features = []
 min_version = "0.41"
+assetDir = "assets"
 
 [author]
   name = "Andreas Olsson"
