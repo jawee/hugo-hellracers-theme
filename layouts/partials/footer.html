@@ -1,0 +1,31 @@
+<footer>
+{{ with .Site.Menus.contact }}
+    <nav>
+        <ul>
+            {{ range . }}
+                <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+            {{ end }}
+        </ul>
+    </nav>
+{{ end }}
+{{ with .Site.Menus.social }}
+    <nav>
+        <ul>
+            {{ range . }}
+                <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+            {{ end }}
+        </ul>
+    </nav>
+{{ end }}
+{{ with .Site.Menus.partners }}
+    <nav>
+        <ul>
+            {{ range . }}
+                <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+            {{ end }}
+        </ul>
+    </nav>
+{{ end }}
+
+
+</footer>

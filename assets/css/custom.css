@@ -1,0 +1,16 @@
+.driver-item {
+    margin: 0;
+    padding: 0;
+}
+.driver-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+.driver-list-caption {
+    background: black;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}

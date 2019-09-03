@@ -1,5 +1,6 @@
-<a href="{{.Permalink}}">
-    {{ .Params.Name }}
-    {{ .Params.Irating }}
-    <img src="{{ .Params.Image }}">
-</a>
+<div class="col-sm driver-item">
+    <a href="{{.Permalink}}">
+        <img src="{{ .Params.Image }}">
+        <p class="driver-list-caption">{{ .Params.Name }}</p>
+    </a>
+</div>
