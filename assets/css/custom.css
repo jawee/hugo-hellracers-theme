@@ -1,9 +1,11 @@
 * {
     text-transform: uppercase;
+    font-family: 'Abel', sans-serif;
 }
 
 header a {
     color: #ffffff;
+    font-weight: 800;
 }
 
 .bg-hellracers-blue {
@@ -32,12 +34,13 @@ header a {
 }
 
 .footer-menu-header {
-    font-weight: bold;
+    font-weight: 900;
 }
 
 footer {
     background: #ffc400;
     color: #ffffff;
+    font-weight: 900;
 }
 
 footer nav ul {
@@ -59,4 +62,5 @@ footer img {
 
 footer a {
     color: #ffffff;
+    font-weight: normal;
 }
