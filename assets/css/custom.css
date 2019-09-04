@@ -1,3 +1,20 @@
+* {
+    text-transform: uppercase;
+}
+
+header a {
+    color: #ffffff;
+}
+
+.bg-hellracers-blue {
+    background-color: #2461ce;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+    width: auto;
+}
+
 .driver-item {
     margin: 0;
     padding: 0;
@@ -12,5 +29,34 @@
     background: black;
     color: white;
     text-align: center;
-    text-transform: uppercase;
+}
+
+.footer-menu-header {
+    font-weight: bold;
+}
+
+footer {
+    background: #ffc400;
+    color: #ffffff;
+}
+
+footer nav ul {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 0;
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+footer img {
+    max-height: 160px;
+    float: right;
+    width: auto;
+    height: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer a {
+    color: #ffffff;
 }
