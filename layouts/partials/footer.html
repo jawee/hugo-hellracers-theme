@@ -39,3 +39,10 @@
         </div>
     </div>
 </footer>
+
+{{ $bootstrap := resources.Get "js/bootstrap.bundle.min.js" }}
+{{ $jquery := resources.Get "js/jquery-3.4.1.min.js" }}
+{{ $customjs := resources.Get "js/custom.js" }}
+{{ $js := slice $jquery $bootstrap $customjs | resources.Concat "js/bundle.js" }}
+
+<script src="{{ $js.RelPermalink }}"></script>
