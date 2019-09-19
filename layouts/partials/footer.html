@@ -6,7 +6,7 @@
                 <ul>
                     <li class="footer-menu-header">Contact</li>
                     {{ range . }}
-                        <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+                        <li><a href="{{ .URL | relURL }}" target="_blank">{{ .Name }}</a></li>
                     {{ end }}
                 </ul>
             </nav>
@@ -16,7 +16,7 @@
                 <ul>
                     <li class="footer-menu-header">Social</li>
                     {{ range . }}
-                        <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+                        <li><a href="{{ .URL | relURL }}" target="_blank">{{ .Name }}</a></li>
                     {{ end }}
                 </ul>
             </nav>
@@ -26,7 +26,7 @@
                 <ul>
                     <li class="footer-menu-header">Partners</li>
                     {{ range . }}
-                        <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+                        <li><a href="{{ .URL | relURL }}" target="_blank">{{ .Name }}</a></li>
                     {{ end }}
                 </ul>
             </nav>

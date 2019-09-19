@@ -2,13 +2,16 @@
     <main>
         <h1 id="title"> {{ .Title }}</h1>
         {{ .Content }}
-
-        <div class="container-fluid">
-            <div class="row">
-                {{ range .Pages }}
-                    {{ partial "drivers/driver" .}}
+        <div class="row">
+            {{ $driversPerRow := 4 }}
+            {{ $count := 0 }}
+            {{ range .Pages }}
+                {{ $count = (add $count 1) }}
+                {{ partial "drivers/driver" .}}
+                {{ if eq (mod $count $driversPerRow) 0}}
+                    </div><div class="row">
                 {{ end }}
-            </div>
+            {{ end }}
         </div>
     </main>
 {{ end }}
