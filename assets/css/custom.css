@@ -5,8 +5,22 @@
 /* font-family: 'Share Tech Mono', monospace;
 font-family: 'Bungee', cursive; */
 
-h1 {
+#newsCarousel { /* ugly hack */
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#newsCarousel a {
+    color: #ffffff;
+}
+
+h1, h2, h3, h4, h5 {
     font-family: 'Bungee', cursive;
+    text-transform: uppercase;
+}
+
+article {
+    padding-top: 50px;
 }
 
 img {
@@ -94,4 +108,14 @@ footer a {
 footer a:hover {
     color: #2461ce;
     text-decoration: none;
+}
+
+@media (max-width: 992px) { 
+    .navbar-nav .nav-item {
+        padding-right: 0;
+    }
+    
+    .navbar-nav .nav-item:first-child {
+        padding-left: 0;
+    }
 }
