@@ -8,7 +8,7 @@
         {{ end }}
 
         {{ range .Paginator.Pages }}
-            {{ partial "news/news" .}}
+            {{ .Render "summary" }}
         {{ end }}
         {{ partial "pagination.html" . }}
     </main>

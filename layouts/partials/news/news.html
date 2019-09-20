@@ -1,7 +1,8 @@
 <article>
     <h1>{{ .Title }}</h1>
-    <time>{{ .Date.Format "02.01.2006 15:04" }}</time>
-    <div class="news-content">
+    <time>Posted on {{ .Date.Format "January 2, 2006" }}</time>
+    <div class="news-content hidden">
         {{ .Content }}
     </div>
+    <button class="btn btn-primary read-more-button">Read More</button>
 </article>
