@@ -5,11 +5,6 @@
 /* font-family: 'Share Tech Mono', monospace;
 font-family: 'Bungee', cursive; */
 
-#newsCarousel { /* ugly hack */
-    margin-left: -15px;
-    margin-right: -15px;
-}
-
 #newsCarousel a {
     color: #ffffff;
 }
@@ -57,6 +52,11 @@ article:first-child {
 
 img {
     max-width: 100%;
+}
+
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .navbar-nav .nav-item {
