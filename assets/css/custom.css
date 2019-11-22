@@ -5,6 +5,11 @@
 /* font-family: 'Share Tech Mono', monospace;
 font-family: 'Bungee', cursive; */
 
+.navbar-dark .navbar-toggler {
+    border: none;
+    color: #ffffff;
+}
+
 #newsCarousel a {
     color: #ffffff;
 }
@@ -12,6 +17,10 @@ font-family: 'Bungee', cursive; */
 h1, h2, h3, h4, h5 {
     font-family: 'Bungee', 'Saira Semi Condensed';
     text-transform: uppercase;
+}
+
+main {
+    padding-top: 25px;
 }
 
 article {
@@ -24,6 +33,7 @@ article {
 
 article:first-child {
     border-top: none;
+    padding-top: 0;
 }
 
 .news-content {
@@ -160,5 +170,21 @@ footer a:hover {
     
     .navbar-nav .nav-item:first-child {
         padding-left: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    footer nav ul {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.1em;
+    }
+
+    footer img {
+        max-height: 100px;
+        float: none;
     }
 }
