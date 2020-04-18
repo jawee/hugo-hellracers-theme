@@ -27,8 +27,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="https://fonts.googleapis.com/css?family=Bungee|Saira+Semi+Condensed:100,200,300,400,500,600,700,800,900|Share+Tech+Mono&display=swap" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 {{ $cssbootstrap := resources.Get "css/bootstrap.min.css" }}
 {{ $customcss := resources.Get "css/custom.css" }}
 
 {{ $allcss := slice $cssbootstrap $customcss | resources.Concat "css/vendor.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $allcss.RelPermalink }}" integrity="{{ $allcss.Data.Integrity }}">
+
+
+{{ $bootstrap := resources.Get "js/bootstrap.bundle.min.js" }}
+{{ $jquery := resources.Get "js/jquery-3.4.1.min.js" }}
+{{ $customjs := resources.Get "js/custom.js" }}
+{{ $js := slice $jquery $bootstrap $customjs | resources.Concat "js/bundle.js" }}
+
+<script src="{{ $js.RelPermalink }}"></script>
