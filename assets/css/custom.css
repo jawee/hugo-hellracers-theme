@@ -156,6 +156,14 @@ footer a:hover {
     text-decoration: none;
 }
 
+.pagination {
+  line-height: 38px;
+}
+
+.page-item {
+  margin-right: 5px;
+}
+
 @media (max-width: 1200px) {
     .news-content.hidden {
         max-height: 600px;
