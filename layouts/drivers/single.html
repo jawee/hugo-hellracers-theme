@@ -2,7 +2,7 @@
     <main>
         <article>
             <h1>{{ .Params.Name }}</h1>
-            <img src="{{ .Params.Image }}">
+            <img alt="{{ .Params.Name }}" src="{{ .Params.Image }}">
             <div>
                 {{ .Content }}
             </div>
