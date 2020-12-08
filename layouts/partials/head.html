@@ -8,10 +8,10 @@
   gtag('config', 'UA-123285381-2');
 </script>
 <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
-<meta itemprop="image" content="{{ .Site.ogimage | absURL }}">
-<meta property="og:image" content="{{ .Site.ogimage | absURL }}">
-<meta property="twitter:image" content="{{ .Site.ogimage | absURL }}">
-<meta property="twitter:image:src" content="{{ .Site.ogimage | absURL }}">
+<meta itemprop="image" content="{{ .Params.ogimage | absURL }}">
+<meta property="og:image" content="{{ .Params.ogimage | absURL }}">
+<meta property="twitter:image" content="{{ .Params.ogimage | absURL }}">
+<meta property="twitter:image:src" content="{{ .Params.ogimage | absURL }}">
 <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
