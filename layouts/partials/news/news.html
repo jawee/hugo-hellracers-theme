@@ -1,6 +1,14 @@
 <article>
     <h1>{{ .Title }}</h1>
     <time>Posted on {{ .Date.Format "January 2, 2006" }}</time>
+    <div class="image">
+        {{ with .Resources.ByType "image" }}
+        {{ range . }}
+        {{ $scaled := .Resize "1110x" }}
+        <img src="{{ $scaled.RelPermalink }}">
+        {{ end }}
+        {{ end }}
+    </div>
     <div class="news-content hidden">
         {{ .Content }}
     </div>
