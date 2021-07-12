@@ -18,7 +18,7 @@
 				{{ end }}
 				{{ with .Resources.ByType "image" }}
 				{{ range . }}
-				{{ $scaled := .Resize "1110x" }}
+				{{ $scaled := .Resize "1680x" }}
 				<img class ="d-block w-100" alt="{{ .Title }}" src="{{ $scaled.RelPermalink }}">
 				{{ end }}
 				{{ end }}
